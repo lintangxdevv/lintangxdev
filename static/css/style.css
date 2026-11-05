@@ -96,8 +96,9 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--fg); outline-of
 .data { margin: 0 0 40px; padding: 6px 22px; list-style: none; background: var(--card); border: 1px solid var(--line); border-radius: 22px; }
 .data li { display: flex; gap: 14px; padding: 14px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.12); }
 .data li:last-child { border-bottom: 0; }
-.data span { width: 70px; color: var(--soft); }
-.data b { font-weight: 500; }
+.data span { width: 104px; flex-shrink: 0; color: var(--soft); }
+.data b { font-weight: 500; display: inline-flex; align-items: center; flex-wrap: wrap; gap: 4px 10px; }
+.logo-kecil { height: 24px; width: auto; }
 
 h3 { font-size: 1.45rem; font-weight: 600; margin-bottom: 10px; }
 .favorit { margin-bottom: 44px; }
@@ -222,6 +223,7 @@ h3 { font-size: 1.45rem; font-weight: 600; margin-bottom: 10px; }
 }
 .jasa h3 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 800; line-height: 1.12; margin-bottom: 14px; }
 .harga { margin: 20px 0 22px; font-family: var(--judul); font-size: 2.3rem; font-weight: 800; line-height: 1.1; letter-spacing: -0.03em; }
+.jasa.kedua { margin-top: 28px; }
 .harga small { display: block; font-family: "Figtree", system-ui, sans-serif; font-size: 0.95rem; font-weight: 400; letter-spacing: 0; color: var(--soft); }
 .syarat { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
 .syarat li { display: flex; gap: 14px; align-items: flex-start; padding: 16px; background: var(--bg); border: 1px solid var(--line); border-radius: 18px; color: var(--soft); font-size: 0.97rem; line-height: 1.5; }
