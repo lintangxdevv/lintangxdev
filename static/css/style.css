@@ -241,13 +241,17 @@ h3 { font-size: 1.45rem; font-weight: 600; margin-bottom: 10px; }
 }
 .tombol:hover { transform: scale(1.04); }
 .tombol svg { width: 20px; height: 20px; }
-.nomor { margin: 12px 0 0; font-size: 0.9rem; }
 
 footer { margin-top: 72px; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.15); color: var(--soft); font-size: 0.88rem; text-align: center; }
 
 @media (max-width: 700px) {
-  .home { grid-template-columns: 1fr; gap: 36px; }
-  .bingkai { position: relative; top: 0; max-width: 250px; margin: 0 auto; order: -1; }
+  .home { grid-template-columns: 1fr 40%; column-gap: 18px; row-gap: 0; }
+  .kiri { display: contents; }
+  .kiri > * { grid-column: 1 / -1; }
+  .kiri .sapa { grid-row: 1; text-align: center; margin-bottom: 24px; }
+  .kiri .lead { grid-column: 1; grid-row: 2; margin: 0; font-size: 1rem; line-height: 1.6; max-width: none; align-self: center; }
+  .kiri .data { margin-top: 32px; }
+  .bingkai { position: relative; top: 0; grid-column: 2; grid-row: 2; margin: 0; padding: 8px; }
   .menu button { font-size: 0.78rem; }
   .jasa { grid-template-columns: 1fr; padding: 24px; gap: 26px; }
   .tiga { gap: 10px; }
