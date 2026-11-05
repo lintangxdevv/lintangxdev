@@ -96,9 +96,8 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--fg); outline-of
 .data { margin: 0 0 40px; padding: 6px 22px; list-style: none; background: var(--card); border: 1px solid var(--line); border-radius: 22px; }
 .data li { display: flex; gap: 14px; padding: 14px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.12); }
 .data li:last-child { border-bottom: 0; }
-.data span { width: 104px; flex-shrink: 0; color: var(--soft); }
-.data b { font-weight: 500; display: inline-flex; align-items: center; flex-wrap: wrap; gap: 4px 10px; }
-.logo-kecil { height: 24px; width: auto; }
+.data span { width: 84px; flex-shrink: 0; color: var(--soft); }
+.data b { font-weight: 500; }
 
 h3 { font-size: 1.45rem; font-weight: 600; margin-bottom: 10px; }
 .favorit { margin-bottom: 44px; }
