@@ -111,9 +111,3 @@ document.querySelectorAll('.foto img').forEach(img => {
     else hilang();
   }
 });
-
-document.querySelectorAll('.logo-kecil').forEach(img => {
-  const hilang = () => img.remove();
-  img.addEventListener('error', hilang);
-  if (img.complete && !img.naturalWidth) hilang();
-});
